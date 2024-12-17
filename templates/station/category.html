@@ -1,0 +1,11 @@
+<html></html>
+    <head>
+        <title>分类列表</title>
+    </head>
+    <body>
+        <h1>分类列表</h1>
+        {% for category in categories %}
+            <p>{{ category.name }}</p>
+        {% endfor %}
+    </body>
+</html>

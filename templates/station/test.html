@@ -1,0 +1,38 @@
+<script>
+
+
+// 在 AJAX 请求中使用加载对话框
+$.ajax({
+  url: "{{ url_for('.login') }}",
+  type: 'post',
+  data: {
+    'identifier': identifier,
+    'password': password
+  },
+  beforeSend: function () {
+    // 在请求发送前显示加载对话框
+    showLoadingDialog();
+  },
+  success: function (data) {
+    console.log("成功回调：", data); // 打印返回数据
+    alert(data.errmsg);
+    if (data.status == 0) {
+      console.log("准备跳转到 /personal");
+      setTimeout(function () {
+        window.location.href = "{{ url_for('.personal') }}";
+      }, 1000);
+    } else {
+      console.error("操作失败，状态码：", data.status, "错误信息：", data.errmsg);
+    }
+  },
+  complete: function () {
+    // 在请求完成后无论成功与否都关闭加载对话框
+    closeLoadingDialog();
+  },
+  error: function (xhr, status, error) {
+    console.error("请求失败：", status, error);
+    alert("请求失败，请稍后重试！");
+  }
+});
+
+</script>
