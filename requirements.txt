@@ -1,4 +1,4 @@
-asgiref @ file:///C:/b/abs_ae1n0p_8_w/croot/asgiref_1724072476516/work
+asgiref==3.8.1
 asttokens==3.0.0
 backcall==0.2.0
 backports.zoneinfo==0.2.1
@@ -24,17 +24,17 @@ packaging==24.2
 parso==0.8.4
 pickleshare==0.7.5
 prompt_toolkit==3.0.48
-psycopg2 @ file:///C:/b/abs_4aotb39ojr/croot/psycopg2_1704232487763/work
+psycopg2==2.9.9
 pure_eval==0.2.3
 Pygments==2.18.0
 PyMySQL==1.1.1
-pytz @ file:///C:/b/abs_6ap4tsz1ox/croot/pytz_1713974360290/work
+pytz==2024.1
 PyYAML==6.0.2
 requests==2.32.3
-sqlparse @ file:///C:/b/abs_88361ub_qu/croot/sqlparse_1690904577514/work
+sqlparse==0.4.4
 stack-data==0.6.3
 traitlets==5.14.3
-typing_extensions @ file:///C:/b/abs_0as9mdbkfl/croot/typing_extensions_1715268906610/work
+typing_extensions==4.11.0
 tzdata==2024.2
 uritemplate==4.1.1
 urllib3==2.2.3
